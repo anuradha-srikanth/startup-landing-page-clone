@@ -1,5 +1,10 @@
 html{
     background-color: LightGray;
+    overflow: scroll;
+}
+
+body{
+    height: 1000px;
 }
 
 div {
@@ -7,25 +12,30 @@ div {
 }
 
 .nav-bar{
-    min-height: 50px;
+    height: 5%;
     background-color: white;
 }
 
 ul{ 
-    height: 50px;
+    width: 70%;
     list-style: none;
     margin: 0 auto;
+    padding: 0px;
     /*padding-right: 100px;
     padding-left: 100px;*/
 
  }
 
 li{
+    /*width: 13%;*/
+    max-height: 100%;
     float: left;
-    margin: 10px;
+    margin-right: 3%;
     text-align: center;
     font-size: 12px;
-    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 li a{
@@ -45,24 +55,50 @@ li a:hover{
     margin-right: 120px;
 }
 .masthead{
-    height: 400px;
+    height:50%;
     text-align: center;
     background-image: url("https://photos-2.dropbox.com/t/2/AACDtfW7QKi7AniJ8qa3HAJatF75q7NeXx-nUxIDeX_pWw/12/357404183/jpeg/32x32/3/1466805600/0/2/first-background%20copy.jpg/ENSM5ecCGEsgAigC/KW8UftFosyCQF7X9rgCZFn7FVHUwtxuM6S4d-wOzxEc?size_mode=3&size=1024x768");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .masthead h1{
     color: white;
     margin-top: 140px;
     margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    font-stretch: expanded;
+
 }
 
 .masthead h3{
     color: white;
     margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-stretch: expanded;
 }
 
 button{
     margin-top: 25px;
     padding: 10px;
-    background-color: orange;
+    background-color: #f15a29;
+    border-width: 0px;
+    border-radius: 5px;
+    width: 12%;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+#wet{
+    width: 70%;
+    float: right;
+    max-height: 5%;
+    vertical-align: middle;
 }
