@@ -1,0 +1,68 @@
+html{
+    background-color: LightGray;
+}
+
+div {
+    border: 2px solid;
+}
+
+.nav-bar{
+    min-height: 50px;
+    background-color: white;
+}
+
+ul{ 
+    height: 50px;
+    list-style: none;
+    margin: 0 auto;
+    /*padding-right: 100px;
+    padding-left: 100px;*/
+
+ }
+
+li{
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+li a{
+    text-decoration: none;
+    color: Gray;
+
+ }
+
+li a:hover{
+    color: black;
+    text-decoration: bold;
+}
+
+#logo img{
+    max-height: 30px; 
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.masthead{
+    height: 400px;
+    text-align: center;
+    background-image: url("https://photos-2.dropbox.com/t/2/AACDtfW7QKi7AniJ8qa3HAJatF75q7NeXx-nUxIDeX_pWw/12/357404183/jpeg/32x32/3/1466805600/0/2/first-background%20copy.jpg/ENSM5ecCGEsgAigC/KW8UftFosyCQF7X9rgCZFn7FVHUwtxuM6S4d-wOzxEc?size_mode=3&size=1024x768");
+}
+
+.masthead h1{
+    color: white;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}
+
+.masthead h3{
+    color: white;
+    margin: 0px;
+}
+
+button{
+    margin-top: 25px;
+    padding: 10px;
+    background-color: orange;
+}
