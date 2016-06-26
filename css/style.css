@@ -14,9 +14,12 @@ div {
 .nav-bar{
     height: 5%;
     background-color: white;
+    position:fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
-ul{ 
+#nav-links{ 
     width: 70%;
     list-style: none;
     margin: 0 auto;
@@ -26,7 +29,7 @@ ul{
 
  }
 
-li{
+#nav-links li{
     /*width: 13%;*/
     max-height: 100%;
     float: left;
@@ -36,15 +39,16 @@ li{
     font-family: 'Roboto', sans-serif;
     white-space: nowrap;
     box-sizing: border-box;
+    display: inline-block;
 }
 
-li a{
+#nav-links li a{
     text-decoration: none;
     color: Gray;
 
  }
 
-li a:hover{
+#nav-links li a:hover{
     color: black;
     text-decoration: bold;
 }
@@ -57,7 +61,7 @@ li a:hover{
 .masthead{
     height:50%;
     text-align: center;
-    background-image: url("https://photos-2.dropbox.com/t/2/AACDtfW7QKi7AniJ8qa3HAJatF75q7NeXx-nUxIDeX_pWw/12/357404183/jpeg/32x32/3/1466805600/0/2/first-background%20copy.jpg/ENSM5ecCGEsgAigC/KW8UftFosyCQF7X9rgCZFn7FVHUwtxuM6S4d-wOzxEc?size_mode=3&size=1024x768");
+    background-image: url("img/ma.jpg"); /* why is this not working */
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +75,6 @@ li a:hover{
     font-weight: 300;
     font-size: 35px;
     font-stretch: expanded;
-
 }
 
 .masthead h3{
@@ -88,7 +91,7 @@ button{
     background-color: #f15a29;
     border-width: 0px;
     border-radius: 5px;
-    width: 12%;
+    width: 150px;
 }
 
 button a{
@@ -101,4 +104,77 @@ button a{
     float: right;
     max-height: 5%;
     vertical-align: middle;
+}
+
+#everyone{
+    text-align: center;
+}
+
+#everyone h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    font-stretch: expanded;
+    margin-bottom: 0px;
+}
+
+#everyone img{
+    width: 100px;
+    margin: 4%;
+}
+
+#broken{
+    /*float: left;*/
+    list-style: none;
+    text-align: center;   
+    padding-left: 0px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+#broken li{
+    display: inline-block;
+    text-align: center;
+    margin: 3.5%;
+}
+
+#caption{
+    white-space: pre-wrap;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#social{
+    list-style: none;
+    text-align: center;   
+    padding-left: 0px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+#social li{
+    display: inline-block;
+    text-align: center;
+    margin: 0.5%;
+}
+
+.social{
+    width: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+}
+
+#social li a i{
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+
+#copyright{
+    font-size: 9px;
+    text-decoration-color: gray;
 }
