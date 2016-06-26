@@ -71,7 +71,7 @@ div {
 .masthead{
     height:50%;
     text-align: center;
-    background-image: url("img/ma.jpg"); /* why is this not working */
+    background-image: url("../img/ma.jpg"); /* why is this not working */
     background-color: LightGrey;
 /*    background-position: center bottom;
     background-repeat: no-repeat;
