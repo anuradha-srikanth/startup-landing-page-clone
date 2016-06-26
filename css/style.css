@@ -1,5 +1,4 @@
 html{
-    background-color: LightGray;
     overflow: scroll;
 }
 
@@ -8,22 +7,30 @@ body{
 }
 
 div {
-    border: 2px solid;
+    border: 1px solid;  /* #fff Cannot remove this without position of nav bar changing */
 }
 
 .nav-bar{
-    height: 5%;
-    background-color: white;
-    position:fixed;
+    /*height: 5%;*/
+    background-color: #fff;
+    position:fixed top;
     width: 100%;
     z-index: 9999;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.content{
+    height: 100%;
 }
 
 #nav-links{ 
-    width: 70%;
+    width: 40%;
     list-style: none;
     margin: 0 auto;
-    padding: 0px;
+    padding-right: 20%;
+    float: right;
+    padding-top: 15px;
     /*padding-right: 100px;
     padding-left: 100px;*/
 
@@ -31,9 +38,8 @@ div {
 
 #nav-links li{
     /*width: 13%;*/
-    max-height: 100%;
-    float: left;
-    margin-right: 3%;
+    float: right;
+    padding-right: 5%;
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
@@ -41,6 +47,7 @@ div {
     box-sizing: border-box;
     display: inline-block;
 }
+
 
 #nav-links li a{
     text-decoration: none;
@@ -53,18 +60,22 @@ div {
     text-decoration: bold;
 }
 
-#logo img{
-    max-height: 30px; 
-    margin-left: 120px;
+.logo{
+    width: 60px;
     margin-right: 120px;
+    padding: 5px;
+    padding-left: 20%;
+    margin-right: 0;
+    padding-top: 10px;
 }
 .masthead{
     height:50%;
     text-align: center;
     background-image: url("img/ma.jpg"); /* why is this not working */
-    background-position: center bottom;
+    background-color: LightGrey;
+/*    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .masthead h1{
@@ -99,18 +110,21 @@ button a{
     color: white;
 }
 
+/*
 #wet{
     width: 70%;
     float: right;
     max-height: 5%;
     vertical-align: middle;
 }
+*/
 
 #everyone{
     text-align: center;
+    margin-top: 10%;
 }
 
-#everyone h1{
+#everyone h2{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 35px;
@@ -119,7 +133,7 @@ button a{
 }
 
 #everyone img{
-    width: 100px;
+    width: 90px;
     margin: 4%;
 }
 
@@ -135,14 +149,18 @@ button a{
 #broken li{
     display: inline-block;
     text-align: center;
-    margin: 3.5%;
+    /*margin: 4%;*/
+    width: 20%;
 }
 
 #caption{
-    white-space: pre-wrap;
-    width: 100px;
+    /*white-space: pre-wrap;*/
+    /*width: 100px;*/
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: baseline;
 }
 
 #social{
@@ -151,30 +169,61 @@ button a{
     padding-left: 0px;
     vertical-align: baseline;
     box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #social li{
     display: inline-block;
     text-align: center;
-    margin: 0.5%;
+    margin: 4px;
+    border: 1px solid #eaebec;
+    border-radius: 10px;
+    border-radius: 20px;
+    border-width: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .social{
     width: 40px;
 }
 
+i{
+    width: 15px;
+}
+
+footer{
+    margin-top: 12%;
+}
 footer p{
     text-align: center;
     font-size: 10px;
 }
 
-#social li a i{
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: black;
-}
-
 #copyright{
     font-size: 9px;
     text-decoration-color: gray;
+}
+
+#twitter{
+    color: #55acee;
+}
+
+#fb{
+    color: #4c66a4;
+}
+
+#insta{
+    color: #3f729b;
+}
+
+hr{
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+    margin-left: 15%;
+    margin-right: 15%;
 }
